@@ -19,9 +19,9 @@ import type { Meteor } from "~/types/meteors";
 const meteors_data: Meteor = {
   name: "Join our Discord",
   description:
-    "Join our Discord server to chat with other developers and get help.",
+    "Join our Discord server to chat about your delivery needs.",
   button_content: "Chat with us",
-  url: "https://discord.gg/8SwSX43wnD",
+  url: "https://discord.gg/YEQCwtSHzb",
 };
 
 export default async function IndexPage({
@@ -41,28 +41,28 @@ export default async function IndexPage({
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
               <Link href="https://document.saasfly.io" target="_blank">
                 <DocumentGuide>
-                  {dict.marketing.introducing || "Introducing Saasfly"}
+                  {dict.marketing.introducing || "Follow @DELIV3RY on TikTok"}
                 </DocumentGuide>
               </Link>
 
               <div className="mt-6">
-                <h1 className="relative mb-6 max-w-4xl text-left text-4xl font-bold dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
+                <h1 className="relative max-w-4xl mb-6 text-4xl font-bold text-left dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
                   {dict.marketing.title ||
-                    "Saasfly: A new SaaS player? Make things easier."}
+                    "W3W.delivery: A Gen-Z focused 3-word delivery service powered by social media influencers and What3Words."}
                 </h1>
               </div>
 
               <div>
                 <span className="text-zinc-500 sm:text-xl">
                   {dict.marketing.sub_title ||
-                    "Your complete All-in-One solution for building SaaS services."}
+                    "Showcasing deliveries on social media with images, videos, or live feeds"}
                 </span>
                 <TypewriterEffectSmooths />
               </div>
 
-              <div className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
+              <div className="flex flex-col justify-center w-full mt-6 mb-4 space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
                 <Link href={`${lang}/login`}>
-                  <ShimmerButton className="mx-auto flex justify-center">
+                  <ShimmerButton className="flex justify-center mx-auto">
                     <span className="z-10 w-48 whitespace-pre bg-gradient-to-b from-black from-30% to-gray-300/80 bg-clip-text text-center text-sm font-semibold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 dark:text-transparent">
                       {dict.marketing.get_started}
                     </span>
@@ -70,8 +70,8 @@ export default async function IndexPage({
                 </Link>
 
                 <Link href="https://github.com/saasfly/saasfly" target="_blank">
-                  <div className="flex h-full items-center justify-center">
-                    <Icons.GitHub className="mr-2 h-6 w-6" />
+                  <div className="flex items-center justify-center h-full">
+                    <Icons.GitHub className="w-6 h-6 mr-2" />
                     <span className="text-base font-semibold">
                       {dict.marketing.view_on_github || "View on GitHub"}
                     </span>
@@ -81,10 +81,10 @@ export default async function IndexPage({
             </div>
           </div>
 
-          <div className="hidden h-full w-full xl:block">
+          <div className="hidden w-full h-full xl:block">
             <div className="flex flex-col pt-28">
               <Meteorss meteor={meteors_data} />
-              <div className="mt-4 flex w-full justify-between">
+              <div className="flex justify-between w-full mt-4">
                 <XBlogArticle />
                 <div className="ml-4">
                   <FeaturesCard />
@@ -125,14 +125,14 @@ export default async function IndexPage({
       <section className="w-full px-8 pt-10 sm:px-0 sm:pt-0 md:px-0 md:pt-0 xl:px-0 xl:pt-0">
         <div className="flex h-full w-full flex-col items-center pb-[100px] pt-10">
           <div>
-            <h1 className="mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl">
+            <h1 className="mb-6 text-3xl font-bold text-center dark:text-zinc-100 md:text-5xl">
               What People Are Saying
             </h1>
           </div>
           <div className="mb-6 text-xl dark:text-zinc-100 md:text-xl">
             Don’t just take our word for it. Here’s what{" "}
             <span className="font-bold">real people</span> are saying about
-            Saasfly.
+            W3W.delivery.
           </div>
 
           <div className="w-full overflow-x-hidden">
