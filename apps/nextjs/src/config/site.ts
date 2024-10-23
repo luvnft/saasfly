@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Saasfly",
-  description: "We provide an easier way to build saas service in production",
-  url: "https://github.com/saasfly/saasfly",
+  name: "W3W.delivery",
+  description: "A TikTok social three-word delivery service that includes photo, video, or livestream proof of delivery with the customer.",
+  url: "https://w3w.delivery",
   ogImage: "",
   links: {
-    github: "https://github.com/saasfly/saasfly",
+    tiktok: "https://tiktok.com/@deliv3ry",
   },
 };

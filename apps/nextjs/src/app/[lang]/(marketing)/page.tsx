@@ -39,7 +39,7 @@ export default async function IndexPage({
         <div className="grid grid-cols-1 gap-10 pb-10 md:pb-40 xl:grid-cols-2">
           <div className="flex flex-col items-start">
             <div className="flex flex-col pt-4 md:pt-28 lg:pt-28 xl:pt-28">
-              <Link href="https://document.saasfly.io" target="_blank">
+              <Link href="https://tiktok.com/@deliv3ry" target="_blank">
                 <DocumentGuide>
                   {dict.marketing.introducing || "Follow @DELIV3RY on TikTok"}
                 </DocumentGuide>
