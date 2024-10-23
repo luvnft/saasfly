@@ -19,17 +19,17 @@
     "": ""
   },
   "marketing": {
-    "introducing": "Introducing W3W.delivery",
-    "title": "W3W.delivery: A Gen-Z 3-word delivery service powered by social media influencers and What3Words.",
+    "introducing": "Follow @DELIV3RY on TikTok",
+    "title": "W3W.delivery: A 3-word delivery service powered by social media influencers and What3Words.",
     "sub_title": "At the intersection of delivery and social media marketing, turn your proof of delivery into social media content with W3W.delivery",
     "get_started": "Get Started",
-    "view_on_github": "Join our Discord",
+    "view_on_github": "View Live Delivery",
     "explore_product": "Explore Product",
     "features": "Features",
-    "sub_features": "Cloud-native: Simplifying technology and reducing costs for startups.",
+    "sub_features": "Delivery social media marketing",
     "k8s_features": "Fast, simple development",
     "devops_features": "Easy application deployment",
-    "price_features": "Economically efficient for production environments.",
+    "price_features": "Flat fee delivery prices.",
     "main_nav_features": "Features",
     "main_nav_pricing": "Pricing",
     "main_nav_products": "Products",
@@ -52,7 +52,7 @@
     "": ""
   },
   "common": {
-    "copyright": "Copyright © ${currentYear} Nextify Limited. All rights reserved.",
+    "copyright": "Copyright © ${currentYear} W3W.delivery Limited. All rights reserved.",
     "dashboard": {
       "main_nav_documentation": "Documentation",
       "main_nav_support": "Support",

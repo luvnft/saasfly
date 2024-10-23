@@ -48,7 +48,7 @@ export default async function IndexPage({
               <div className="mt-6">
                 <h1 className="relative max-w-4xl mb-6 text-4xl font-bold text-left dark:text-zinc-100 sm:text-7xl md:text-7xl xl:text-7xl">
                   {dict.marketing.title ||
-                    "W3W.delivery: A Gen-Z focused 3-word delivery service powered by social media influencers and What3Words."}
+                    "W3W.delivery: A 3-word delivery service powered by social media influencers and What3Words."}
                 </h1>
               </div>
 
@@ -69,11 +69,11 @@ export default async function IndexPage({
                   </ShimmerButton>
                 </Link>
 
-                <Link href="https://github.com/saasfly/saasfly" target="_blank">
+                <Link href="https://live.w3w.delivery" target="_blank">
                   <div className="flex items-center justify-center h-full">
                     <Icons.GitHub className="w-6 h-6 mr-2" />
                     <span className="text-base font-semibold">
-                      {dict.marketing.view_on_github || "View on GitHub"}
+                      {dict.marketing.view_on_github || "View Live Delivery"}
                     </span>
                   </div>
                 </Link>
