@@ -44,16 +44,16 @@ export function XBlogArticle() {
 }
 
 const blogContent = {
-  slug: "Making-Sense-of-React-Server-Components",
-  author: "Nextify",
+  slug: "how-w3w-delivery-is-evolving-the-delivery-industry-and-marketing",
+  author: "Wizard of Hahz",
   date: "26th March, 2024",
-  title: "Making Sense of React Server Components",
+  title: "How w3w.delivery is Evolving the Delivery Industry and Marketing",
   description:
-    "So, here's something that makes me feel old: React celebrated its 10th birthday this year!",
+    "Exploring w3w.delivery's impact on logistics, marketing strategies, and customer engagement.",
   image:
-    "https://cdn.sanity.io/images/tpb4obti/production/50c13f886c039225be4e7e99023b8f1e2b4161b9-1792x1024.png",
+    "https://i.imgur.com/0wjlxLn.jpeg",
   authorAvatar:
-    "https://pbs.twimg.com/profile_images/1766283284370305025/QKXW5W3M_400x400.jpg",
+    "https://i.imgur.com/75Gk90N.jpeg",
 };
 
 const TitleComponent = ({
