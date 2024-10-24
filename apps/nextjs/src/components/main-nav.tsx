@@ -30,7 +30,7 @@ export function MainNav({ items, children, params: { lang } }: MainNavProps) {
   };
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href={`/${lang}`} className="hidden items-center space-x-2 md:flex">
+      <Link href={`/${lang}`} className="items-center hidden space-x-2 md:flex">
         <div>
           <Image
             src="/images/avatars/saasfly-logo.svg"
@@ -39,7 +39,7 @@ export function MainNav({ items, children, params: { lang } }: MainNavProps) {
             alt=""
           />
         </div>
-        <div className="text-2xl font-semibold">Saasfly</div>
+        <div className="text-2xl font-semibold">W3W.delivery</div>
       </Link>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">

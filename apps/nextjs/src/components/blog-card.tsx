@@ -1,4 +1,28 @@
+import React from 'react';
 import { FollowerPointerCard } from "@saasfly/ui/following-pointer";
+
+const blogContent = {
+  slug: "how-w3w-delivery-is-evolving-the-delivery-industry-and-marketing",
+  author: "Wizard of Hahz",
+  date: "26th March, 2024",
+  title: "How w3w.delivery is Evolving the Delivery Industry and Marketing",
+  description: "Exploring w3w.delivery's impact on logistics, marketing strategies, and customer engagement.",
+  image: "https://i.imgur.com/0wjlxLn.jpeg",
+  authorAvatar: "https://i.imgur.com/75Gk90N.jpeg",
+};
+
+const TitleComponent = ({ title, avatar }: { title: string; avatar: string; }) => (
+  <div className="flex items-center space-x-2">
+    <img
+      src={avatar}
+      height="20"
+      width="20"
+      alt="thumbnail"
+      className="border-2 border-white rounded-full"
+    />
+    <p>{title}</p>
+  </div>
+);
 
 export function XBlogArticle() {
   return (
@@ -29,12 +53,11 @@ export function XBlogArticle() {
             <div className="flex flex-row items-center justify-between mt-10">
               <span className="text-sm text-gray-500">{blogContent.date}</span>
               <a 
-                href={`/blog/how-w3w-delivery-is-evolving-the-delivery-industry-and-marketing`}
+                href={`/blog/${blogContent.slug}`}
                 className="relative z-10 block px-6 py-2 text-xs font-bold text-white bg-black rounded-xl"
               >
                 Read More
-                </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -42,35 +65,3 @@ export function XBlogArticle() {
     </div>
   );
 }
-
-const blogContent = {
-  slug: "how-w3w-delivery-is-evolving-the-delivery-industry-and-marketing",
-  author: "Wizard of Hahz",
-  date: "26th March, 2024",
-  title: "How w3w.delivery is Evolving the Delivery Industry and Marketing",
-  description:
-    "Exploring w3w.delivery's impact on logistics, marketing strategies, and customer engagement.",
-  image:
-    "https://i.imgur.com/0wjlxLn.jpeg",
-  authorAvatar:
-    "https://i.imgur.com/75Gk90N.jpeg",
-};
-
-const TitleComponent = ({
-  title,
-  avatar,
-}: {
-  title: string;
-  avatar: string;
-}) => (
-  <div className="flex items-center space-x-2">
-    <img
-      src={avatar}
-      height="20"
-      width="20"
-      alt="thumbnail"
-      className="border-2 border-white rounded-full"
-    />
-    <p>{title}</p>
-  </div>
-);
