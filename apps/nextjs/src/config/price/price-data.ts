@@ -16,6 +16,11 @@ interface SubscriptionPlanTranslation {
   };
 }
 
+// Function to format and round the prices
+const formatPrice = (price: number): string => {
+  return price.toFixed(2); // Ensure two decimal places
+};
+
 export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
   zh: [
     {
@@ -34,8 +39,8 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
         yearly: 12999,
       },
       stripeIds: {
-        monthly: null,
-        yearly: null,
+        monthly: env.NEXT_PUBLIC_STRIPE_BASIC_MONTHLY_PRICE_ID,
+        yearly: env.NEXT_PUBLIC_STRIPE_BASIC_YEARLY_PRICE_ID,
       },
     },
     {
@@ -107,8 +112,8 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
         yearly: 12999,
       },
       stripeIds: {
-        monthly: null,
-        yearly: null,
+        monthly: env.NEXT_PUBLIC_STRIPE_BASIC_MONTHLY_PRICE_ID,
+        yearly: env.NEXT_PUBLIC_STRIPE_BASIC_YEARLY_PRICE_ID,
       },
     },
     {
@@ -119,8 +124,8 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
         "Everything in Basic",
         "75 deliveries a month",
         "5 mid (50K–250K followers) influencer deliveries",
+        "Branded POD (Proof of delivery)",
         "Priority customer support",
-        "Exclusive webinars and training",
       ],
       limitations: [
         "Branded POD content",
@@ -291,8 +296,8 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
         "월 150회의 배송",
         "블록체인 배송 증명",
         "브랜드 배송 증명",
-        "매월 1회의 메가 인플루언서 배송 (1M+ 팔로워)",
-        "라이브 스트림 깜짝 배송 이벤트",
+        "월 1회의 메가 인플루언서 배송 (1M+ 팔로워)",
+        "라이브 스트리밍 서프라이즈 배송 이벤트",
       ],
       limitations: [],
       prices: {
@@ -305,4 +310,17 @@ export const priceDataMap: Record<string, SubscriptionPlanTranslation[]> = {
       },
     },
   ],
+};
+
+// Function to render price tables in the UI with rounded values
+const renderPriceTable = (plan: SubscriptionPlanTranslation) => {
+  return `
+    <div class="price-table">
+      <h3>${plan.title}</h3>
+      <p>${plan.description}</p>
+      <p>Monthly: $${formatPrice(plan.prices.monthly)}</p>
+      <p>Yearly: $${formatPrice(plan.prices.yearly)}</p>
+      <!-- Add other content and benefits here -->
+    </div>
+  `;
 };
