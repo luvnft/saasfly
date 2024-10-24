@@ -71,7 +71,6 @@ export default async function IndexPage({
 
                 <Link href="https://live.w3w.delivery" target="_blank">
                   <div className="flex items-center justify-center h-full">
-                    <Icons.GitHub className="w-6 h-6 mr-2" />
                     <span className="text-base font-semibold">
                       {dict.marketing.view_on_github || "View Live Delivery"}
                     </span>
