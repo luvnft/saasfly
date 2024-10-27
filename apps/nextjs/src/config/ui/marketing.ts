@@ -18,7 +18,7 @@ export const getMarketingConfig = async ({
       },
       {
         title: dict.marketing.main_nav_pricing,
-        href: `/pricing`,
+        href: `https://service.w3w.delivery`,
       },
       {
         title: dict.marketing.main_nav_blog,

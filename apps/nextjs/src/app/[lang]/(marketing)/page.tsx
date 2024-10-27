@@ -61,7 +61,7 @@ export default async function IndexPage({
               </div>
 
               <div className="flex flex-col justify-center w-full mt-6 mb-4 space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
-                <Link href={`${lang}/login`}>
+                <Link href="https://service.w3w.delivery" target="_blank">
                   <ShimmerButton className="flex justify-center mx-auto">
                     <span className="z-10 w-48 whitespace-pre bg-gradient-to-b from-black from-30% to-gray-300/80 bg-clip-text text-center text-sm font-semibold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 dark:text-transparent">
                       {dict.marketing.get_started}
