@@ -13,30 +13,30 @@ interface Item {
 
 let notifications = [
   {
-    name: "Subscribe",
-    description: "Flat fee pricing",
+    name: "Service",
+    description: "Pay service.w3w.delivery",
     time: "15m ago",
 
     icon: "🚚",
     color: "#00C9A7",
   },
   {
-    name: "Choose your customers",
-    description: "Gather their W3W address",
+    name: "W3W Addy",
+    description: "Send us a W3W address",
     time: "10m ago",
     icon: "📦",
     color: "#FFB800",
   },
   {
-    name: "We create delivery content",
-    description: "Update your Discord",
+    name: "Deliv3ry",
+    description: "Social Update",
     time: "5m ago",
     icon: "🎥",
     color: "#FF3D71",
   },
   {
-    name: "Go Viral",
-    description: "Create paid ads",
+    name: "Driver Paid",
+    description: "$33 USD/SOL",
     time: "2m ago",
     icon: "💬",
     color: "#1E86FF",
