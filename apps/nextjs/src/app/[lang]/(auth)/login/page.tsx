@@ -25,17 +25,17 @@ export default async function LoginPage({
 }) {
   const dict = await getDictionary(lang);
   return (
-    <div className="container flex h-screen w-screen flex-col items-center justify-center">
+    <div className="container flex flex-col items-center justify-center w-screen h-screen">
       <Link
-        href={`/${lang}`}
+        href="https://service.w3w.delivery"
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute left-4 top-4 md:left-8 md:top-8",
         )}
       >
         <>
-          <Icons.ChevronLeft className="mr-2 h-4 w-4" />
-          {dict.login.back}
+          <Icons.ChevronLeft className="w-4 h-4 mr-2" />
+          Service
         </>
       </Link>
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
@@ -55,14 +55,14 @@ export default async function LoginPage({
           </p>
         </div>
         <UserAuthForm lang={lang} dict={dict.login} />
-        {/* <p className="px-8 text-center text-sm text-muted-foreground">
+        <p className="px-8 text-sm text-center text-muted-foreground">
           <Link
-            href={`/${lang}/register`}
-            className="hover:text-brand underline underline-offset-4"
+            href="https://discord.gg/YEQCwtSHzb"
+            className="underline hover:text-brand underline-offset-4"
           >
-            {dict.login.singup_title}
+            Driver
           </Link>
-        </p> */}
+        </p>
       </div>
     </div>
   );
