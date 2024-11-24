@@ -27,7 +27,7 @@ export default async function LoginPage({
   return (
     <div className="container flex flex-col items-center justify-center w-screen h-screen">
       <Link
-        href="https://service.w3w.delivery"
+        href="https://solvice.w3w.delivery"
         className={cn(
           buttonVariants({ variant: "ghost" }),
           "absolute left-4 top-4 md:left-8 md:top-8",
