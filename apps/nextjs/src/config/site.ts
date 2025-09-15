@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Saasfly",
-  description: "We provide an easier way to build saas service in production",
-  url: "https://github.com/saasfly/saasfly",
+  name: "W3W.DELIVERY",
+  description: "We provide an easier way to track packages on-chain",
+  url: "https://w3w.delivery",
   ogImage: "",
   links: {
-    github: "https://github.com/saasfly/saasfly",
+    github: "https://github.com/luvnft/saasfly/",
   },
 };

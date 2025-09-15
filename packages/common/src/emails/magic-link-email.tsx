@@ -33,9 +33,9 @@ export const MagicLinkEmail = ({
       account.
     </Preview>
     <Tailwind>
-      <Body className="bg-white font-sans">
-        <Container className="mx-auto py-5 pb-12">
-          <Icons.Logo className="m-auto block h-10 w-10" />
+      <Body className="font-sans bg-white">
+        <Container className="py-5 pb-12 mx-auto">
+          <Icons.Logo className="block w-10 h-10 m-auto" />
           <Text className="text-base">Hi {firstName},</Text>
           <Text className="text-base">
             Welcome to {siteName} ! Click the link below to{" "}
@@ -43,7 +43,7 @@ export const MagicLinkEmail = ({
           </Text>
           <Section className="my-5 text-center">
             <Button
-              className="inline-block rounded-md bg-zinc-900 px-4 py-2 text-base text-white no-underline"
+              className="inline-block px-4 py-2 text-base text-white no-underline rounded-md bg-zinc-900"
               href={actionUrl}
             >
               {mailType === "login" ? "Sign in" : "Activate Account"}
@@ -59,7 +59,7 @@ export const MagicLinkEmail = ({
             </Text>
           ) : null}
           <Hr className="my-4 border-t-2 border-gray-300" />
-          <Text className="text-sm text-gray-600">saasfly.io</Text>
+          <Text className="text-sm text-gray-600">W3W.DELIVERY</Text>
         </Container>
       </Body>
     </Tailwind>

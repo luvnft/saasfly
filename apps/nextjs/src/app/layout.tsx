@@ -51,10 +51,10 @@ export const metadata = {
   ],
   authors: [
     {
-      name: "saasfly",
+      name: "W3W.DELIVERY",
     },
   ],
-  creator: "Saasfly",
+  creator: "W3W.DELIVERY",
   openGraph: {
     type: "website",
     locale: "en_US",

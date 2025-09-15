@@ -18,21 +18,21 @@ export const SignInModal = ({ dict }: { dict: Record<string, string> }) => {
   return (
     <Modal showModal={signInModal.isOpen} setShowModal={signInModal.onClose}>
       <div className="w-full">
-        <div className="flex flex-col items-center justify-center space-y-3 border-b border-neutral-200 dark:border-neutral-800 bg-background px-4 py-6 pt-8 text-center md:px-16">
+        <div className="flex flex-col items-center justify-center px-4 py-6 pt-8 space-y-3 text-center border-b border-neutral-200 dark:border-neutral-800 bg-background md:px-16">
           <a href={siteConfig.url}>
             <Image
-              src="/images/avatars/saasfly-logo.svg"
+              src="/images/avatars/w3wdelivery-logo.svg"
               className="mx-auto"
               width="64"
               height="64"
               alt=""
             />
           </a>
-          <h3 className="font-urban text-2xl font-bold">{dict.signup}</h3>
+          <h3 className="text-2xl font-bold font-urban">{dict.signup}</h3>
           <p className="text-sm text-gray-500 dark:text-zinc-400">{dict.privacy}</p>
         </div>
 
-        <div className="flex flex-col space-y-4 px-4 py-8 md:px-16">
+        <div className="flex flex-col px-4 py-8 space-y-4 md:px-16">
           <Button
             variant="default"
             disabled={signInClicked}
@@ -50,9 +50,9 @@ export const SignInModal = ({ dict }: { dict: Record<string, string> }) => {
             }}
           >
             {signInClicked ? (
-              <Icons.Spinner className="mr-2 h-4 w-4 animate-spin" />
+              <Icons.Spinner className="w-4 h-4 mr-2 animate-spin" />
             ) : (
-              <Icons.GitHub className="mr-2 h-4 w-4" />
+              <Icons.GitHub className="w-4 h-4 mr-2" />
             )}{" "}
             {dict.signup_github}
           </Button>

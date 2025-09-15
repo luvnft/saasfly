@@ -26,7 +26,7 @@ export function TypewriterEffectSmooths() {
       text: "with",
     },
     {
-      text: "Saasfly.",
+      text: "W3W.DELIVERY.",
       className: "text-blue-500",
     },
   ];

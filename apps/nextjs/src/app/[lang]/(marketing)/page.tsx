@@ -20,39 +20,39 @@ const people = [
   {
     id: 1,
     name: "tianzx",
-    designation: "CEO at Nextify",
+    designation: "ATL Business Driver",
     image: "https://avatars.githubusercontent.com/u/10096899",
     link: "https://x.com/nextify2024",
   },
   {
     id: 2,
     name: "jackc3",
-    designation: "Co-founder at Nextify",
+    designation: "ATL Express Driver",
     image: "https://avatars.githubusercontent.com/u/10334353",
     link: "https://x.com/BingxunYao",
   },
   {
     id: 3,
     name: "imesong",
-    designation: "Contributor",
+    designation: "ATL Express Driver",
     image: "https://avatars.githubusercontent.com/u/3849293",
   },
   {
     id: 4,
     name: "ziveen",
-    designation: "Contributor",
+    designation: "ATL Business Driver",
     image: "https://avatars.githubusercontent.com/u/22560152",
   },
   {
     id: 5,
     name: "Zenuncl",
-    designation: "Independent Software Developer",
+    designation: "ATL Broker Driver",
     image: "https://avatars.githubusercontent.com/u/3316062",
   },
   {
     id: 6,
     name: "Innei",
-    designation: "Indie Developer",
+    designation: "ATL ExpressDriver",
     image: "https://avatars.githubusercontent.com/u/41265413",
   },
 ];
@@ -77,7 +77,7 @@ export default async function IndexPage({
                   <div
                     className="mb-6 max-w-4xl text-left text-4xl font-semibold dark:text-zinc-100 md:text-5xl xl:text-5xl md:leading-[4rem] xl:leading-[4rem]">
                     {dict.marketing.title || "Ship your apps to the world easier with "}
-                    <ColourfulText text="Saasfly"/>
+                    <ColourfulText text="W3W.DELIVERY"/>
                   </div>
                 </div>
 
@@ -88,19 +88,19 @@ export default async function IndexPage({
                 </div>
 
                 <div
-                  className="mb-4 mt-6 flex w-full flex-col justify-center space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0 z-10">
-                  <Link href="https://github.com/saasfly/saasfly" target="_blank">
+                  className="z-10 flex flex-col justify-center w-full mt-6 mb-4 space-y-4 sm:flex-row sm:justify-start sm:space-x-8 sm:space-y-0">
+                  <Link href="https://app.w3w.delivery" target="_blank">
                     <Button
-                      className="bg-blue-600 hover:bg-blue-500 text-white rounded-full text-lg px-6 h-12 font-medium">
+                      className="h-12 px-6 text-lg font-medium text-white bg-blue-600 rounded-full hover:bg-blue-500">
                       {dict.marketing.get_started}
-                      <Icons.ArrowRight className="h-5 w-5"/>
+                      <Icons.ArrowRight className="w-5 h-5"/>
                     </Button>
                   </Link>
 
                   <CodeCopy/>
                 </div>
 
-                <div className="flex xl:flex-row flex-col items-center justify-start mt-4 w-full">
+                <div className="flex flex-col items-center justify-start w-full mt-4 xl:flex-row">
                   <div className="flex">
                     <AnimatedTooltip items={people}/>
                   </div>
@@ -122,7 +122,7 @@ export default async function IndexPage({
             </BackgroundLines>
           </div>
 
-          <div className="hidden h-full w-full xl:block bg-background">
+          <div className="hidden w-full h-full xl:block bg-background">
             <div className="flex flex-col pt-44">
               <RightsideMarketing dict={dict.marketing.right_side}/>
             </div>
@@ -135,9 +135,9 @@ export default async function IndexPage({
       </section>
 
       <section className="container pt-24">
-        <div className="flex flex-col justify-center items-center pt-10">
+        <div className="flex flex-col items-center justify-center pt-10">
           <div className="text-lg text-neutral-500 dark:text-neutral-400">{dict.marketing.sponsor.title}</div>
-          <div className="mt-4 flex items-center gap-4">
+          <div className="flex items-center gap-4 mt-4">
             <Link href="https://go.clerk.com/uKDp7Au" target="_blank">
               <Image src="/images/clerk.png" width="48" height="48" alt="twillot"/>
             </Link>
@@ -147,9 +147,9 @@ export default async function IndexPage({
             <Link href="https://www.setupyourpay.com/" target="_blank">
               <Image src="https://www.setupyourpay.com/logo.png" width="48" height="48" alt="setupyourpay" />
             </Link>
-            <Link href="https://opencollective.com/saasfly" target="_blank">
-              <div className="flex items-center gap-2 px-4 py-2 rounded-xl border-2 border-dashed border-neutral-300 dark:border-neutral-700 hover:bg-accent dark:hover:bg-neutral-800/30">
-                <Icons.Heart className="w-5 h-5 fill-pink-600 text-pink-600 dark:fill-pink-700 dark:text-pink-700" />
+            <Link href="https://buy.stripe.com/7sY14n1mp7CS74H0YN5wI0W" target="_blank">
+              <div className="flex items-center gap-2 px-4 py-2 border-2 border-dashed rounded-xl border-neutral-300 dark:border-neutral-700 hover:bg-accent dark:hover:bg-neutral-800/30">
+                <Icons.Heart className="w-5 h-5 text-pink-600 fill-pink-600 dark:fill-pink-700 dark:text-pink-700" />
                 <span className="text-sm font-medium text-neutral-500 dark:text-neutral-200">{dict.marketing.sponsor.donate || ''}</span>
               </div>
             </Link>
@@ -164,7 +164,7 @@ export default async function IndexPage({
       <section className="w-full px-8 pt-10 sm:px-0 sm:pt-24 md:px-0 md:pt-24 xl:px-0 xl:pt-24">
         <div className="flex h-full w-full flex-col items-center pb-[100px] pt-10">
           <div>
-            <h1 className="mb-6 text-center text-3xl font-bold dark:text-zinc-100 md:text-5xl">
+            <h1 className="mb-6 text-3xl font-bold text-center dark:text-zinc-100 md:text-5xl">
               {dict.marketing.people_comment.title}
             </h1>
           </div>
