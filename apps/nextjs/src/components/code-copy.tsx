@@ -5,7 +5,7 @@ import * as Icons from "@saasfly/ui/icons";
 
 export function CodeCopy() {
   const [copied, setCopied] = useState(false)
-  const command = "CK58SqUPBYXeyaQoq1zVQmETEqSQrP7xUGBkwaRfs7CL"
+  const command = "DM @HAHZ for any questions"
 
   const copyToClipboard = async () => {
     try {
@@ -20,7 +20,7 @@ export function CodeCopy() {
   return (
     <div className="flex items-center justify-between h-12 max-w-xl px-3 rounded-full bg-neutral-200 dark:bg-neutral-700/40">
       <div className="flex items-center space-x-2 font-mono text-neutral-700 dark:text-neutral-300">
-        <span>$</span>
+        <span>?</span>
         <span>{command}</span>
       </div>
       <button
