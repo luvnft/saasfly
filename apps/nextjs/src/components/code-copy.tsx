@@ -5,7 +5,7 @@ import * as Icons from "@saasfly/ui/icons";
 
 export function CodeCopy() {
   const [copied, setCopied] = useState(false)
-  const walletAddress = "BNu8t9Ykix5BW4Q4UfTkwjC3k5NWH3aQdJsVtbU1jCB9"
+  const walletAddress = "w3wdelivery.fun"
   
   const copyToClipboard = async () => {
     try {
