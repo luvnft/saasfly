@@ -26,7 +26,7 @@ const config = {
     // serverActions: true,
   },
   images: {
-    domains: ["images.unsplash.com", "avatars.githubusercontent.com", "w3w.delivery", "www.twillot.com", "cdnv2.ruguoapp.com", "www.setupyourpay.com"],
+    domains: ["images.unsplash.com", "avatars.githubusercontent.com", "w3w.delivery","app.w3w.delivery", "www.twillot.com", "cdnv2.ruguoapp.com", "www.setupyourpay.com"],
   },
   /** We already do linting and typechecking as separate tasks in CI */
   eslint: { ignoreDuringBuilds: true },
