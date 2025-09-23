@@ -41,7 +41,6 @@ export function CodeCopy() {
           )}
         </button>
       </div>
-      <p className="text-xs text-neutral-500">Chain tips only – no fiat accepted 💎</p>
     </div>
   )
 }
